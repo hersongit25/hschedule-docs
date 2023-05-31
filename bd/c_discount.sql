@@ -1,0 +1,9 @@
+CREATE TABLE C_DISCOUNT(
+id_disc NUMBER(2) NOT NULL,
+name_disc VARCHAR2(22) NOT NULL,
+amount_disc VARCHAR2(4) NOT NULL,
+CONSTRAINT discount_pk PRIMARY KEY(id_disc)
+);
+
+INSERT INTO C_DISCOUNT VALUES (1,'Descuento Genius','10');
+COMMIT;

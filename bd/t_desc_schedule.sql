@@ -1,0 +1,11 @@
+CREATE TABLE T_DESC_SCHEDULE(
+id_schedule NUMBER(10) REFERENCES T_SCHEDULE(id_schedule),
+num_day NUMBER(2) NOT NULL,
+num_adult NUMBER(1) NOT NULL,
+num_child NUMBER(1) NOT NULL,
+time_schedule TIMESTAMP(2) NOT NULL,
+note VARCHAR2(50)
+);
+
+INSERT INTO T_DESC_SCHEDULE VALUES (10,2,2,1,CURRENT_TIMESTAMP,'asistencia de silla de ruedas');
+COMMIT;
